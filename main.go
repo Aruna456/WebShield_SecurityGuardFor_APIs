@@ -10,6 +10,7 @@ import (
 func main() {
 	router := gin.Default()
 	router.Use(shields.AuthShield())
+	router.Use(shields.SanitizeInput())
 	router.GET("/todos", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"todos": []string{"Learn Go", "Know about webshield", "Prepare demo"},
