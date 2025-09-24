@@ -5,4 +5,5 @@ WebShield is a Lightweight **Middleware** that **Secures** your Web APIs by chec
 
 ## Features
 - Authentication
+- Input Sanitization
 - More to come.. 
